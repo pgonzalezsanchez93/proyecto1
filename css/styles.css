@@ -43,6 +43,7 @@ body {
 p {
     font-size: 1.1rem;
     line-height: 1.5;
+    margin-bottom: 0.5rem;
 }
 
 img {
@@ -329,4 +330,38 @@ footer.fila .col-33 {
 
 footer p {
     color: white;
+    font-size: 0.9rem;
+}
+footer p:first-child {
+    color: #a97c50;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+footer p img {
+    height: 16px;
+    margin-right: 5px;
+}
+
+footer .rrss {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .rrss img {
+    height: 36px;
+}
+
+footer .links {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .links a {
+    color: white;
+}
+footer .col-33:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

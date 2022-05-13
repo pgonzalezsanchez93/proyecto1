@@ -186,6 +186,13 @@ header.transparent nav a:hover {
 
 /*Layout*/ /*Conjunto de estilos css*/
 
+#cookies {                   
+    display: block;
+    margin-top: -90px;
+    padding-bottom: 90px;
+
+}
+
 .fila {
     max-width: 1440px;
     display: flex;
@@ -194,6 +201,23 @@ header.transparent nav a:hover {
 
 .fila#primera {
     margin-top: 100vh;
+}
+
+.fila.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
+    grid-gap: 2rem;
+    justify-content: center;
+    margin: 100px 0 40px;
+}
+
+.fila.contacto {
+    margin-top: 80px;
+}
+
+.col-100 {
+    width: 100%;
+    padding: 1rem;
 }
 
 .col-50 {
@@ -312,11 +336,77 @@ button:hover {
     color: #a97c50;
 }
 
+/*Cards*/
+
+.card {
+    position: relative;
+    width: 360px;
+    border-radius: 0.3rem;
+    box-shadow: 2px 2px 4px grey;
+    overflow: hidden ;
+}
+
+.img-card {
+    height: 240px;
+    overflow: hidden;
+}
+
+.img-card img {
+    max-width: initial ; /* Eliminar el comportamiento por defecto */
+    height: 240px;
+
+}
+
+.footer-card {
+    height: 180px;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-card a {
+    align-self: flex-end;  /*Esta propiedad permite modificar un elemento
+                                hijo en flexbox en su eje secundario (en este caso Y)*/
+
+}
+
+/*Propiedad*/
+
+.fila.propiedad {
+    max-width: initial;
+    padding: 1.5rem;
+    margin-top: 80px;
+    background-image: url("../img/property5.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.fila.propiedad .col-50 {
+    background-color: rgba(255, 255, 255, 0.850);
+}
+
+.fila.propiedad .col-50 h1 {
+    font-size: 1.6rem;
+    color: #a97c50;
+    margin-bottom: 0.5rem;
+}
+
+.fila.propiedad .col-50 p {
+    display: flex;
+    align-items: center;
+}
+
+.fila.propiedad .col-50 img {
+    height: 1.3rem;
+    margin-right: 0.4rem;
+}
+
+
 /*Footer*/
 
 footer {
     background-color: #424242;
-    max-width: 4400px;
 }
 
 footer.fila {
@@ -364,4 +454,5 @@ footer .col-33:nth-child(3) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 160px;
 }
